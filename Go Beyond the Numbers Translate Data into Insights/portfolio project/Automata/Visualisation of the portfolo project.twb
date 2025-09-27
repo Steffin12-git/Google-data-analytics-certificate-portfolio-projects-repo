@@ -1,0 +1,858 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi' inline='true' name='federated.1p8gtqa0bc7zbw1doywdq0ncft9s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi' name='textscan.15pxyvr098hk2813tr6wc1okm44l'>
+            <connection class='textscan' directory='D:/Certificates/Google advance data analytics certificates/Google-data-analytics-certificate-portfolio-projects-repo/Go Beyond the Numbers Translate Data into Insights/portfolio project/Dataset' filename='2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.15pxyvr098hk2813tr6wc1okm44l' name='2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv' table='[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='integer' name='VendorID' ordinal='1' />
+            <column datatype='string' name='tpep_pickup_datetime' ordinal='2' />
+            <column datatype='string' name='tpep_dropoff_datetime' ordinal='3' />
+            <column datatype='integer' name='passenger_count' ordinal='4' />
+            <column datatype='real' name='trip_distance' ordinal='5' />
+            <column datatype='integer' name='RatecodeID' ordinal='6' />
+            <column datatype='string' name='store_and_fwd_flag' ordinal='7' />
+            <column datatype='integer' name='PULocationID' ordinal='8' />
+            <column datatype='integer' name='DOLocationID' ordinal='9' />
+            <column datatype='integer' name='payment_type' ordinal='10' />
+            <column datatype='real' name='fare_amount' ordinal='11' />
+            <column datatype='real' name='extra' ordinal='12' />
+            <column datatype='real' name='mta_tax' ordinal='13' />
+            <column datatype='real' name='tip_amount' ordinal='14' />
+            <column datatype='real' name='tolls_amount' ordinal='15' />
+            <column datatype='real' name='improvement_surcharge' ordinal='16' />
+            <column datatype='real' name='total_amount' ordinal='17' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VendorID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VendorID]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>VendorID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tpep_pickup_datetime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tpep_pickup_datetime]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>tpep_pickup_datetime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tpep_dropoff_datetime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tpep_dropoff_datetime]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>tpep_dropoff_datetime</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>passenger_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[passenger_count]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>passenger_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trip_distance]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>trip_distance</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RatecodeID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RatecodeID]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>RatecodeID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>store_and_fwd_flag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[store_and_fwd_flag]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>store_and_fwd_flag</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PULocationID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PULocationID]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>PULocationID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOLocationID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DOLocationID]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>DOLocationID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[payment_type]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>payment_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare_amount]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>fare_amount</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extra</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[extra]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>extra</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mta_tax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mta_tax]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>mta_tax</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tip_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tip_amount]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>tip_amount</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tolls_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tolls_amount]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>tolls_amount</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>improvement_surcharge</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[improvement_surcharge]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>improvement_surcharge</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_amount]</local-name>
+            <parent-name>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv]</parent-name>
+            <remote-alias>total_amount</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation1' datatype='boolean' name='[Calculation_558446411277570049]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[trip_distance]=0' />
+      </column>
+      <column caption='DO Location ID' datatype='integer' name='[DOLocationID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='PU Location ID' datatype='integer' name='[PULocationID]' role='dimension' type='ordinal' />
+      <column caption='Ratecode ID' datatype='integer' name='[RatecodeID]' role='dimension' type='ordinal' />
+      <column caption='Vendor ID' datatype='integer' name='[VendorID]' role='dimension' type='ordinal' />
+      <column caption='2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv' datatype='table' name='[__tableau_internal_object_id__].[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]' role='measure' type='quantitative' />
+      <column caption='Extra' datatype='real' name='[extra]' role='measure' type='quantitative' />
+      <column caption='Fare Amount' datatype='real' name='[fare_amount]' role='measure' type='quantitative' />
+      <column caption='Improvement Surcharge' datatype='real' name='[improvement_surcharge]' role='measure' type='quantitative' />
+      <column caption='Mta Tax' datatype='real' name='[mta_tax]' role='measure' type='quantitative' />
+      <column caption='Passenger Count' datatype='integer' name='[passenger_count]' role='measure' type='quantitative' />
+      <column caption='Payment Type' datatype='integer' name='[payment_type]' role='measure' type='quantitative' />
+      <column caption='Store And Fwd Flag' datatype='string' name='[store_and_fwd_flag]' role='dimension' type='nominal' />
+      <column caption='Tip Amount' datatype='real' name='[tip_amount]' role='measure' type='quantitative' />
+      <column caption='Tolls Amount' datatype='real' name='[tolls_amount]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Total Amount' datatype='real' name='[total_amount]' role='dimension' type='ordinal' />
+      <column caption='Tpep Dropoff Datetime' datatype='string' name='[tpep_dropoff_datetime]' role='dimension' type='nominal' />
+      <column caption='Tpep Pickup Datetime' datatype='string' name='[tpep_pickup_datetime]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Trip Distance' datatype='real' name='[trip_distance]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/steff/AppData/Local/Temp/TableauTemp/#TableauTemp_094niv00ngbydg15jao880nuasj5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/26/2025 04:32:21 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22699</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VendorID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[VendorID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VendorID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tpep_pickup_datetime</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tpep_pickup_datetime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tpep_pickup_datetime</remote-alias>
+              <ordinal>2</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22699</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tpep_dropoff_datetime</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tpep_dropoff_datetime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tpep_dropoff_datetime</remote-alias>
+              <ordinal>3</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20613</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>passenger_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[passenger_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>passenger_count</remote-alias>
+              <ordinal>4</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_distance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[trip_distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_distance</remote-alias>
+              <ordinal>5</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1342</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RatecodeID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[RatecodeID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RatecodeID</remote-alias>
+              <ordinal>6</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>store_and_fwd_flag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[store_and_fwd_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>store_and_fwd_flag</remote-alias>
+              <ordinal>7</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PULocationID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PULocationID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PULocationID</remote-alias>
+              <ordinal>8</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOLocationID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DOLocationID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DOLocationID</remote-alias>
+              <ordinal>9</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>254</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_type</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[payment_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fare_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fare_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fare_amount</remote-alias>
+              <ordinal>11</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extra</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[extra]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extra</remote-alias>
+              <ordinal>12</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mta_tax</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mta_tax]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mta_tax</remote-alias>
+              <ordinal>13</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tip_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tip_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tip_amount</remote-alias>
+              <ordinal>14</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>573</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tolls_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tolls_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tolls_amount</remote-alias>
+              <ordinal>15</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>improvement_surcharge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[improvement_surcharge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>improvement_surcharge</remote-alias>
+              <ordinal>16</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_amount</remote-alias>
+              <ordinal>17</ordinal>
+              <family>2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>938</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='ID' />
+        <field-sort-custom-order field='VendorID' />
+        <field-sort-custom-order field='tpep_pickup_datetime' />
+        <field-sort-custom-order field='tpep_dropoff_datetime' />
+        <field-sort-custom-order field='passenger_count' />
+        <field-sort-custom-order field='trip_distance' />
+        <field-sort-custom-order field='Calculation_558446411277570049' />
+        <field-sort-custom-order field='Calculation_558446411266183168' />
+        <field-sort-custom-order field='RatecodeID' />
+        <field-sort-custom-order field='store_and_fwd_flag' />
+        <field-sort-custom-order field='PULocationID' />
+        <field-sort-custom-order field='DOLocationID' />
+        <field-sort-custom-order field='payment_type' />
+        <field-sort-custom-order field='fare_amount' />
+        <field-sort-custom-order field='extra' />
+        <field-sort-custom-order field='mta_tax' />
+        <field-sort-custom-order field='tip_amount' />
+        <field-sort-custom-order field='tolls_amount' />
+        <field-sort-custom-order field='improvement_surcharge' />
+        <field-sort-custom-order field='total_amount' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv' id='2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv_269A5DF2DAD648D69A6104E3EF4AE2CE'>
+            <properties context=''>
+              <relation connection='textscan.15pxyvr098hk2813tr6wc1okm44l' name='2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi.csv' table='[2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='integer' name='VendorID' ordinal='1' />
+                  <column datatype='string' name='tpep_pickup_datetime' ordinal='2' />
+                  <column datatype='string' name='tpep_dropoff_datetime' ordinal='3' />
+                  <column datatype='integer' name='passenger_count' ordinal='4' />
+                  <column datatype='real' name='trip_distance' ordinal='5' />
+                  <column datatype='integer' name='RatecodeID' ordinal='6' />
+                  <column datatype='string' name='store_and_fwd_flag' ordinal='7' />
+                  <column datatype='integer' name='PULocationID' ordinal='8' />
+                  <column datatype='integer' name='DOLocationID' ordinal='9' />
+                  <column datatype='integer' name='payment_type' ordinal='10' />
+                  <column datatype='real' name='fare_amount' ordinal='11' />
+                  <column datatype='real' name='extra' ordinal='12' />
+                  <column datatype='real' name='mta_tax' ordinal='13' />
+                  <column datatype='real' name='tip_amount' ordinal='14' />
+                  <column datatype='real' name='tolls_amount' ordinal='15' />
+                  <column datatype='real' name='improvement_surcharge' ordinal='16' />
+                  <column datatype='real' name='total_amount' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2017_Yellow_Taxi_Trip_Data - 2017_Yellow_Taxi' name='federated.1p8gtqa0bc7zbw1doywdq0ncft9s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p8gtqa0bc7zbw1doywdq0ncft9s'>
+            <column caption='Calculation1' datatype='boolean' name='[Calculation_558446411277570049]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[trip_distance]=0' />
+            </column>
+            <column-instance column='[Calculation_558446411277570049]' derivation='None' name='[none:Calculation_558446411277570049:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_amount]' derivation='None' name='[none:total_amount:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[trip_distance]' derivation='None' name='[none:trip_distance:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Total Amount' datatype='real' name='[total_amount]' role='dimension' type='ordinal' />
+            <column aggregation='Sum' caption='Trip Distance' datatype='real' name='[trip_distance]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1p8gtqa0bc7zbw1doywdq0ncft9s].[none:Calculation_558446411277570049:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1p8gtqa0bc7zbw1doywdq0ncft9s].[none:trip_distance:ok]</rows>
+        <cols>[federated.1p8gtqa0bc7zbw1doywdq0ncft9s].[none:total_amount:ok]</cols>
+      </table>
+      <simple-id uuid='{31B2206A-93EC-434E-84A7-22782B8A2440}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1p8gtqa0bc7zbw1doywdq0ncft9s].[none:Calculation_558446411277570049:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1p8gtqa0bc7zbw1doywdq0ncft9s].[none:Calculation_558446411266183168:nk]</field>
+            <field>[federated.1p8gtqa0bc7zbw1doywdq0ncft9s].[none:Calculation_558446411277570049:nk]</field>
+            <field>[federated.1p8gtqa0bc7zbw1doywdq0ncft9s].[none:total_amount:ok]</field>
+            <field>[federated.1p8gtqa0bc7zbw1doywdq0ncft9s].[none:trip_distance:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{93B40FC1-9423-4886-9A83-55D618061C3E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
