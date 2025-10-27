@@ -1,0 +1,2232 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0912.2314                               -->
+<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='salifort_turnover_dashboard' inline='true' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='salifort_turnover_dashboard' name='textscan.1sengss1g44vun14in3mm1gi8j0t'>
+            <connection class='textscan' directory='D:/Certificates/Google advance data analytics certificates/Google-data-analytics-certificate-portfolio-projects-repo/Google Advanced Data Analytics Capstone/Capstone project/Salifort Motors project lab/Dataset' filename='salifort_turnover_dashboard.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1sengss1g44vun14in3mm1gi8j0t' name='salifort_turnover_dashboard.csv' table='[salifort_turnover_dashboard#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='satisfaction_level' ordinal='0' />
+            <column datatype='real' name='last_evaluation' ordinal='1' />
+            <column datatype='integer' name='number_project' ordinal='2' />
+            <column datatype='integer' name='average_monthly_hours' ordinal='3' />
+            <column datatype='integer' name='tenure' ordinal='4' />
+            <column datatype='integer' name='work_accident' ordinal='5' />
+            <column datatype='integer' name='left' ordinal='6' />
+            <column datatype='integer' name='promotion_last_5years' ordinal='7' />
+            <column datatype='string' name='department' ordinal='8' />
+            <column datatype='string' name='salary' ordinal='9' />
+            <column datatype='real' name='predicted_probability' ordinal='10' />
+            <column datatype='integer' name='predicted_label' ordinal='11' />
+            <column datatype='string' name='model_name' ordinal='12' />
+            <column datatype='real' name='model_accuracy' ordinal='13' />
+            <column datatype='real' name='model_auc' ordinal='14' />
+            <column datatype='real' name='model_precision' ordinal='15' />
+            <column datatype='real' name='model_recall' ordinal='16' />
+            <column datatype='real' name='model_f1' ordinal='17' />
+            <column datatype='string' name='top_feature' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>satisfaction_level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[satisfaction_level]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>satisfaction_level</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_evaluation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[last_evaluation]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>last_evaluation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_project</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_project]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>number_project</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_monthly_hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_monthly_hours]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>average_monthly_hours</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>work_accident</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[work_accident]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>work_accident</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>left</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[left]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>left</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>promotion_last_5years</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[promotion_last_5years]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>promotion_last_5years</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>department</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[salary]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>salary</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predicted_probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[predicted_probability]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>predicted_probability</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predicted_label</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[predicted_label]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>predicted_label</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[model_name]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>model_name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model_accuracy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[model_accuracy]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>model_accuracy</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model_auc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[model_auc]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>model_auc</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model_precision</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[model_precision]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>model_precision</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model_recall</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[model_recall]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>model_recall</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model_f1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[model_f1]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>model_f1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>top_feature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[top_feature]</local-name>
+            <parent-name>[salifort_turnover_dashboard.csv]</parent-name>
+            <remote-alias>top_feature</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_accuracy:qk]&quot;' value='Model Accuracy ' />
+          <alias key='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_auc:qk]&quot;' value='Model Auc' />
+          <alias key='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_f1:qk]&quot;' value='Model F1' />
+          <alias key='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_precision:qk]&quot;' value='Model Precision' />
+          <alias key='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_recall:qk]&quot;' value='Model Recall' />
+          <alias key='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615368949761:qk]&quot;' value='Avg Satisfaction' />
+          <alias key='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615369068546:qk]&quot;' value='Avg Monthly Hours' />
+          <alias key='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615369256963:qk]&quot;' value='Model Accuracy' />
+        </aliases>
+      </column>
+      <column caption='Turnover Rate' datatype='real' name='[Calculation_336925615368400896]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([left]) / COUNT([left])' />
+      </column>
+      <column caption='Average Satisfaction' datatype='real' name='[Calculation_336925615368949761]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([satisfaction_level])' />
+      </column>
+      <column caption='Average Monthly Hours calculated' datatype='real' name='[Calculation_336925615369068546]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([model_accuracy])' />
+      </column>
+      <column caption='Model Accuracy calculated' datatype='real' name='[Calculation_336925615369256963]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([model_accuracy])' />
+      </column>
+      <column caption='Satisfaction Category' datatype='string' name='[Calculation_336925615392382980]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [satisfaction_level] &lt; 0.4 THEN &quot;Low&quot;&#13;&#10;ELSEIF [satisfaction_level] &lt; 0.7 THEN &quot;Meidum&quot;&#13;&#10;ELSE &quot;High&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Turnover Risk Zone' datatype='string' name='[Calculation_978125612480557056]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [tenure] &lt;= 2 THEN &quot;New Joiners&quot;&#13;&#10;ELSEIF [tenure] &lt;= 5 THEN &quot;Critical Retention Period&quot;&#13;&#10;ELSE &quot;Stable Employees (6+)&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Risk Level' datatype='string' name='[Calculation_978125612534038529]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [predicted_probability] &gt;= 0.7 THEN &quot;High Risk&quot;&#13;&#10;ELSE &quot;Low Risk&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Risk Rank' datatype='integer' name='[Calculation_978125612547637251]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='salifort_turnover_dashboard.csv' datatype='table' name='[__tableau_internal_object_id__].[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]' role='measure' type='quantitative' />
+      <column caption='Average Monthly Hours' datatype='integer' name='[average_monthly_hours]' role='measure' type='quantitative' />
+      <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+      <column caption='Last Evaluation' datatype='real' name='[last_evaluation]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal' />
+      <column caption='Model Accuracy' datatype='real' name='[model_accuracy]' role='measure' type='quantitative' />
+      <column caption='Model Auc' datatype='real' name='[model_auc]' role='measure' type='quantitative' />
+      <column caption='Model F1' datatype='real' name='[model_f1]' role='measure' type='quantitative' />
+      <column caption='Model Name' datatype='string' name='[model_name]' role='dimension' type='nominal' />
+      <column caption='Model Precision' datatype='real' name='[model_precision]' role='measure' type='quantitative' />
+      <column caption='Model Recall' datatype='real' name='[model_recall]' role='measure' type='quantitative' />
+      <column caption='Number Project' datatype='integer' name='[number_project]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Predicted Label' datatype='integer' name='[predicted_label]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Predicted Probability' datatype='real' name='[predicted_probability]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Promotion Last 5Years' datatype='integer' name='[promotion_last_5years]' role='dimension' type='ordinal' />
+      <column caption='Salary' datatype='string' name='[salary]' role='dimension' type='nominal' />
+      <column caption='Satisfaction Level' datatype='real' name='[satisfaction_level]' role='measure' type='quantitative' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <column caption='Top Feature' datatype='string' name='[top_feature]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Work Accident' datatype='integer' name='[work_accident]' role='dimension' type='ordinal' />
+      <column-instance column='[Calculation_978125612534038529]' derivation='Attribute' name='[attr:Calculation_978125612534038529:nk]' pivot='key' type='nominal' />
+      <column-instance column='[model_accuracy]' derivation='Avg' name='[avg:model_accuracy:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[model_auc]' derivation='Avg' name='[avg:model_auc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[model_f1]' derivation='Avg' name='[avg:model_f1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[model_precision]' derivation='Avg' name='[avg:model_precision:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[model_recall]' derivation='Avg' name='[avg:model_recall:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_336925615392382980]' derivation='None' name='[none:Calculation_336925615392382980:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_978125612534038529]' derivation='None' name='[none:Calculation_978125612534038529:nk]' pivot='key' type='nominal' />
+      <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[predicted_probability]' derivation='None' name='[none:predicted_probability:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[model_auc]' derivation='Sum' name='[sum:model_auc:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[model_f1]' derivation='Sum' name='[sum:model_f1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_336925615368949761]' derivation='User' name='[usr:Calculation_336925615368949761:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_336925615369068546]' derivation='User' name='[usr:Calculation_336925615369068546:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_336925615369256963]' derivation='User' name='[usr:Calculation_336925615369256963:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/steff/AppData/Local/Temp/TableauTemp/#TableauTemp_0x2ruc41qhnqb010sya0918shdcg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/26/2025 03:02:33 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>satisfaction_level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[satisfaction_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>satisfaction_level</remote-alias>
+              <ordinal>0</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>92</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_evaluation</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[last_evaluation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_evaluation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_project</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_project]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_project</remote-alias>
+              <ordinal>2</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_monthly_hours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[average_monthly_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_monthly_hours</remote-alias>
+              <ordinal>3</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>203</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure</remote-alias>
+              <ordinal>4</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>work_accident</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[work_accident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>work_accident</remote-alias>
+              <ordinal>5</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>left</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[left]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>left</remote-alias>
+              <ordinal>6</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>promotion_last_5years</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[promotion_last_5years]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>promotion_last_5years</remote-alias>
+              <ordinal>7</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>department</remote-alias>
+              <ordinal>8</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>salary</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>salary</remote-alias>
+              <ordinal>9</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>predicted_probability</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[predicted_probability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>predicted_probability</remote-alias>
+              <ordinal>10</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1510</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>predicted_label</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[predicted_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>predicted_label</remote-alias>
+              <ordinal>11</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[model_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model_name</remote-alias>
+              <ordinal>12</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model_accuracy</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[model_accuracy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model_accuracy</remote-alias>
+              <ordinal>13</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model_auc</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[model_auc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model_auc</remote-alias>
+              <ordinal>14</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model_precision</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[model_precision]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model_precision</remote-alias>
+              <ordinal>15</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model_recall</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[model_recall]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model_recall</remote-alias>
+              <ordinal>16</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>model_f1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[model_f1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>model_f1</remote-alias>
+              <ordinal>17</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>top_feature</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[top_feature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>top_feature</remote-alias>
+              <ordinal>18</ordinal>
+              <family>salifort_turnover_dashboard.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_336925615392382980:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Meidum&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:left:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_auc:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[sum:model_auc:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_f1:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[sum:model_f1:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:predicted_probability:ok]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>0.82984885979957834</bucket>
+            </map>
+            <map to='#2f6891'>
+              <bucket>0.55366702883341157</bucket>
+            </map>
+            <map to='#33789d'>
+              <bucket>0.79885668627909556</bucket>
+            </map>
+            <map to='#3589a9'>
+              <bucket>0.83099366698455945</bucket>
+            </map>
+            <map to='#3e99b4'>
+              <bucket>0.75661884337152885</bucket>
+            </map>
+            <map to='#53a9bd'>
+              <bucket>0.70411226294831353</bucket>
+            </map>
+            <map to='#6eb8c5'>
+              <bucket>0.54951860113470785</bucket>
+            </map>
+            <map to='#87c6cc'>
+              <bucket>0.72783332997172168</bucket>
+            </map>
+            <map to='#a0d4d1'>
+              <bucket>0.83261574839624197</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>0.93549056740769998</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_978125612534038529:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Low Risk&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Moderate Risk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;High Risk&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Calculation_978125612534038529:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Low Risk&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Moderate Risk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;High Risk&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>%many-values%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='satisfaction_level' />
+        <field-sort-custom-order field='last_evaluation' />
+        <field-sort-custom-order field='number_project' />
+        <field-sort-custom-order field='average_monthly_hours' />
+        <field-sort-custom-order field='Calculation_978125612545548290' />
+        <field-sort-custom-order field='Calculation_336925615392382980' />
+        <field-sort-custom-order field='tenure' />
+        <field-sort-custom-order field='work_accident' />
+        <field-sort-custom-order field='left' />
+        <field-sort-custom-order field='promotion_last_5years' />
+        <field-sort-custom-order field='department' />
+        <field-sort-custom-order field='salary' />
+        <field-sort-custom-order field='predicted_probability' />
+        <field-sort-custom-order field='Calculation_978125612534038529' />
+        <field-sort-custom-order field='Calculation_336925615369068546' />
+        <field-sort-custom-order field='predicted_label' />
+        <field-sort-custom-order field='model_name' />
+        <field-sort-custom-order field='model_accuracy' />
+        <field-sort-custom-order field='model_auc' />
+        <field-sort-custom-order field='model_precision' />
+        <field-sort-custom-order field='model_recall' />
+        <field-sort-custom-order field='Calculation_336925615368400896' />
+        <field-sort-custom-order field='Calculation_336925615368949761' />
+        <field-sort-custom-order field='Calculation_978125612480557056' />
+        <field-sort-custom-order field='model_f1' />
+        <field-sort-custom-order field='Calculation_336925615369256963' />
+        <field-sort-custom-order field='top_feature' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='salifort_turnover_dashboard.csv' id='salifort_turnover_dashboard.csv_FF1417FBFBC249A0B00F28DF33EEC01E'>
+            <properties context=''>
+              <relation connection='textscan.1sengss1g44vun14in3mm1gi8j0t' name='salifort_turnover_dashboard.csv' table='[salifort_turnover_dashboard#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='satisfaction_level' ordinal='0' />
+                  <column datatype='real' name='last_evaluation' ordinal='1' />
+                  <column datatype='integer' name='number_project' ordinal='2' />
+                  <column datatype='integer' name='average_monthly_hours' ordinal='3' />
+                  <column datatype='integer' name='tenure' ordinal='4' />
+                  <column datatype='integer' name='work_accident' ordinal='5' />
+                  <column datatype='integer' name='left' ordinal='6' />
+                  <column datatype='integer' name='promotion_last_5years' ordinal='7' />
+                  <column datatype='string' name='department' ordinal='8' />
+                  <column datatype='string' name='salary' ordinal='9' />
+                  <column datatype='real' name='predicted_probability' ordinal='10' />
+                  <column datatype='integer' name='predicted_label' ordinal='11' />
+                  <column datatype='string' name='model_name' ordinal='12' />
+                  <column datatype='real' name='model_accuracy' ordinal='13' />
+                  <column datatype='real' name='model_auc' ordinal='14' />
+                  <column datatype='real' name='model_precision' ordinal='15' />
+                  <column datatype='real' name='model_recall' ordinal='16' />
+                  <column datatype='real' name='model_f1' ordinal='17' />
+                  <column datatype='string' name='top_feature' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='salifort_feature_importance' inline='true' name='federated.1tyg5a41bmzmb10zmwubs0kpjpxg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='salifort_feature_importance' name='textscan.090ey5h1yynx6l16vlf9f14zk1qd'>
+            <connection class='textscan' directory='D:/Certificates/Google advance data analytics certificates/Google-data-analytics-certificate-portfolio-projects-repo/Google Advanced Data Analytics Capstone/Capstone project/Salifort Motors project lab/Dataset' filename='salifort_feature_importance.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.090ey5h1yynx6l16vlf9f14zk1qd' name='salifort_feature_importance.csv' table='[salifort_feature_importance#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='feature' ordinal='0' />
+            <column datatype='real' name='importance' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[salifort_feature_importance.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>feature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[feature]</local-name>
+            <parent-name>[salifort_feature_importance.csv]</parent-name>
+            <remote-alias>feature</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[salifort_feature_importance.csv_3CD9150765CD4DD19F6698BC399EBC0F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>importance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[importance]</local-name>
+            <parent-name>[salifort_feature_importance.csv]</parent-name>
+            <remote-alias>importance</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[salifort_feature_importance.csv_3CD9150765CD4DD19F6698BC399EBC0F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='salifort_feature_importance.csv' datatype='table' name='[__tableau_internal_object_id__].[salifort_feature_importance.csv_3CD9150765CD4DD19F6698BC399EBC0F]' role='measure' type='quantitative' />
+      <column caption='Feature' datatype='string' name='[feature]' role='dimension' type='nominal' />
+      <column caption='Importance' datatype='real' name='[importance]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/steff/AppData/Local/Temp/TableauTemp/#TableauTemp_04ts1e81hgsh721b8pa0x1uwzogr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/27/2025 04:52:46 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>feature</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[feature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>feature</remote-alias>
+              <ordinal>0</ordinal>
+              <family>salifort_feature_importance.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[salifort_feature_importance.csv_3CD9150765CD4DD19F6698BC399EBC0F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>importance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[importance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>importance</remote-alias>
+              <ordinal>1</ordinal>
+              <family>salifort_feature_importance.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[salifort_feature_importance.csv_3CD9150765CD4DD19F6698BC399EBC0F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='salifort_feature_importance.csv' id='salifort_feature_importance.csv_3CD9150765CD4DD19F6698BC399EBC0F'>
+            <properties context=''>
+              <relation connection='textscan.090ey5h1yynx6l16vlf9f14zk1qd' name='salifort_feature_importance.csv' table='[salifort_feature_importance#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='feature' ordinal='0' />
+                  <column datatype='real' name='importance' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Department vs Average Satisfaction'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_turnover_dashboard' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bb8dsn03x3nqs161sasy1y1gamu'>
+            <column-instance column='[left]' derivation='Avg' name='[avg:left:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[satisfaction_level]' derivation='Avg' name='[avg:satisfaction_level:qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column caption='Satisfaction Level' datatype='real' name='[satisfaction_level]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk]' value='89' />
+            <format attr='height' value='113' />
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:satisfaction_level:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:satisfaction_level:qk]' />
+              <text column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:satisfaction_level:qk]' />
+              <text column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk]</cols>
+      </table>
+      <simple-id uuid='{B2AEFC74-322B-4944-8400-1999E0E0E39A}' />
+    </worksheet>
+    <worksheet name='Feature Importance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Feature Importance – &quot;Top Drivers of Employee Turnover”</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_feature_importance' name='federated.1tyg5a41bmzmb10zmwubs0kpjpxg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tyg5a41bmzmb10zmwubs0kpjpxg'>
+            <column-instance column='[importance]' derivation='Avg' name='[avg:importance:qk]' pivot='key' type='quantitative' />
+            <column caption='Feature' datatype='string' name='[feature]' role='dimension' type='nominal' />
+            <column caption='Importance' datatype='real' name='[importance]' role='measure' type='quantitative' />
+            <column-instance column='[feature]' derivation='None' name='[none:feature:nk]' pivot='key' type='nominal' />
+            <column-instance column='[importance]' derivation='Sum' name='[sum:importance:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[none:feature:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[sum:importance:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[sum:importance:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[none:feature:nk]' value='31' />
+            <format attr='text-format' field='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[sum:importance:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[avg:importance:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[none:feature:nk]' value='184' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[sum:importance:qk]' palette='orange_blue_diverging_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[avg:importance:qk]' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[avg:importance:qk]' />
+              <text column='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[avg:importance:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.7581214904785156' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[none:feature:nk]</rows>
+        <cols>[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[sum:importance:qk]</cols>
+      </table>
+      <simple-id uuid='{1105F5FF-4945-400D-AE89-3465F0516DB0}' />
+    </worksheet>
+    <worksheet name='High-Risk Employees'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_turnover_dashboard' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bb8dsn03x3nqs161sasy1y1gamu'>
+            <column caption='Risk Level' datatype='string' name='[Calculation_978125612534038529]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [predicted_probability] &gt;= 0.7 THEN &quot;High Risk&quot;&#13;&#10;ELSE &quot;Low Risk&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Average Monthly Hours' datatype='integer' name='[average_monthly_hours]' role='measure' type='quantitative' />
+            <column-instance column='[satisfaction_level]' derivation='Avg' name='[avg:satisfaction_level:qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_978125612534038529]' derivation='None' name='[none:Calculation_978125612534038529:nk]' pivot='key' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[predicted_probability]' derivation='None' name='[none:predicted_probability:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[salary]' derivation='None' name='[none:salary:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' caption='Predicted Probability' datatype='real' name='[predicted_probability]' role='dimension' type='ordinal' />
+            <column caption='Salary' datatype='string' name='[salary]' role='dimension' type='nominal' />
+            <column caption='Satisfaction Level' datatype='real' name='[satisfaction_level]' role='measure' type='quantitative' />
+            <column-instance column='[average_monthly_hours]' derivation='Sum' name='[sum:average_monthly_hours:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[predicted_probability]' derivation='Sum' name='[sum:predicted_probability:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tenure]' derivation='Sum' name='[sum:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:predicted_probability:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([predicted_probability])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:predicted_probability:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:predicted_probability:ok]' direction='DESC' using='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[sum:predicted_probability:qk]' />
+          <slices>
+            <column>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:predicted_probability:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:predicted_probability:ok]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:satisfaction_level:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:predicted_probability:ok]' />
+              <tooltip column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:satisfaction_level:qk]' />
+              <tooltip column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[sum:average_monthly_hours:qk]' />
+              <tooltip column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[sum:tenure:qk]' />
+              <text column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:predicted_probability:ok]' />
+              <text column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:Calculation_978125612534038529:nk]' />
+              <lod column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:predicted_probability:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='239' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk] / [federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:salary:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{8FA77BD6-DDF3-4FE0-908D-52388F40F518}' />
+    </worksheet>
+    <worksheet name='Hours Worked vs Evaluation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_turnover_dashboard' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bb8dsn03x3nqs161sasy1y1gamu'>
+            <column-instance column='[department]' derivation='Attribute' name='[attr:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[salary]' derivation='Attribute' name='[attr:salary:nk]' pivot='key' type='nominal' />
+            <column caption='Average Monthly Hours' datatype='integer' name='[average_monthly_hours]' role='measure' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column caption='Last Evaluation' datatype='real' name='[last_evaluation]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal' />
+            <column-instance column='[average_monthly_hours]' derivation='None' name='[none:average_monthly_hours:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[last_evaluation]' derivation='None' name='[none:last_evaluation:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+            <column caption='Salary' datatype='string' name='[salary]' role='dimension' type='nominal' />
+            <column caption='Satisfaction Level' datatype='real' name='[satisfaction_level]' role='measure' type='quantitative' />
+            <column-instance column='[satisfaction_level]' derivation='Sum' name='[sum:satisfaction_level:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:left:ok]' />
+              <tooltip column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[sum:satisfaction_level:qk]' />
+              <tooltip column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[attr:department:nk]' />
+              <tooltip column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[attr:salary:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.97751379013061523' />
+                <format attr='mark-transparency' value='155' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:average_monthly_hours:qk]</rows>
+        <cols>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:last_evaluation:qk]</cols>
+      </table>
+      <simple-id uuid='{D54AC34C-E72A-418F-A9A4-C3C0B13545F4}' />
+    </worksheet>
+    <worksheet name='KPI cards'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_turnover_dashboard' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bb8dsn03x3nqs161sasy1y1gamu'>
+            <column caption='Turnover Rate' datatype='real' name='[Calculation_336925615368400896]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([left]) / COUNT([left])' />
+            </column>
+            <column caption='Average Satisfaction' datatype='real' name='[Calculation_336925615368949761]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([satisfaction_level])' />
+            </column>
+            <column caption='Average Monthly Hours calculated' datatype='real' name='[Calculation_336925615369068546]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([model_accuracy])' />
+            </column>
+            <column caption='Model Accuracy calculated' datatype='real' name='[Calculation_336925615369256963]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([model_accuracy])' />
+            </column>
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal' />
+            <column caption='Model Accuracy' datatype='real' name='[model_accuracy]' role='measure' type='quantitative' />
+            <column caption='Satisfaction Level' datatype='real' name='[satisfaction_level]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_336925615368400896]' derivation='User' name='[usr:Calculation_336925615368400896:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_336925615368949761]' derivation='User' name='[usr:Calculation_336925615368949761:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_336925615369068546]' derivation='User' name='[usr:Calculation_336925615369068546:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_336925615369256963]' derivation='User' name='[usr:Calculation_336925615369256963:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615369068546:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615368400896:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615368949761:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615369256963:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615369068546:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615368400896:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[usr:Calculation_336925615368949761:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='241' />
+            <format attr='wrap' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='off' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='80' />
+            <format attr='background-color' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='#ffffff' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='18' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='12' />
+            <format attr='font-size' scope='cols' value='15' />
+            <format attr='font-weight' scope='cols' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='18'>&lt;</run>
+                <run bold='true' fontsize='18'>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[Multiple Values]</run>
+                <run bold='true' fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{F8D4782D-AC1F-43CE-BEE5-2CD9A121897C}' />
+    </worksheet>
+    <worksheet name='Model Performance Summary'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_turnover_dashboard' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bb8dsn03x3nqs161sasy1y1gamu'>
+            <column-instance column='[model_accuracy]' derivation='Avg' name='[avg:model_accuracy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[model_auc]' derivation='Avg' name='[avg:model_auc:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[model_f1]' derivation='Avg' name='[avg:model_f1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[model_precision]' derivation='Avg' name='[avg:model_precision:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[model_recall]' derivation='Avg' name='[avg:model_recall:qk]' pivot='key' type='quantitative' />
+            <column caption='Model Accuracy' datatype='real' name='[model_accuracy]' role='measure' type='quantitative' />
+            <column caption='Model Auc' datatype='real' name='[model_auc]' role='measure' type='quantitative' />
+            <column caption='Model F1' datatype='real' name='[model_f1]' role='measure' type='quantitative' />
+            <column caption='Model Precision' datatype='real' name='[model_precision]' role='measure' type='quantitative' />
+            <column caption='Model Recall' datatype='real' name='[model_recall]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_accuracy:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_auc:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_f1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_precision:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_recall:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='206' />
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_accuracy:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_auc:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_f1:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_precision:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:model_recall:qk]' value='p0.00%' />
+            <format attr='border-width' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='92' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='bold' />
+            <format attr='font-size' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='12' />
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='vertical-align' scope='rows' value='center' />
+            <format attr='text-align' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='center' />
+            <format attr='vertical-align' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='18'>&lt;</run>
+                <run bold='true' fontsize='18'>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[Multiple Values]</run>
+                <run bold='true' fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{1801C6E4-913C-4022-95F8-DE113FBE7C06}' />
+    </worksheet>
+    <worksheet name='Satisfaction vs Turnover'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_turnover_dashboard' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bb8dsn03x3nqs161sasy1y1gamu'>
+            <column caption='Satisfaction Category' datatype='string' name='[Calculation_336925615392382980]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [satisfaction_level] &lt; 0.4 THEN &quot;Low&quot;&#13;&#10;ELSEIF [satisfaction_level] &lt; 0.7 THEN &quot;Meidum&quot;&#13;&#10;ELSE &quot;High&quot;&#13;&#10;END' />
+            </column>
+            <column-instance column='[left]' derivation='Avg' name='[avg:left:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_336925615392382980]' derivation='None' name='[none:Calculation_336925615392382980:nk]' pivot='key' type='nominal' />
+            <column caption='Satisfaction Level' datatype='real' name='[satisfaction_level]' role='measure' type='quantitative' />
+            <column-instance column='[satisfaction_level]' derivation='Sum' name='[sum:satisfaction_level:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1bb8dsn03x3nqs161sasy1y1gamu].[sum:satisfaction_level:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:Calculation_336925615392382980:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Meidum&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' field-type='quantitative' range-type='uniform' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:Calculation_336925615392382980:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]</rows>
+        <cols>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:Calculation_336925615392382980:nk]</cols>
+      </table>
+      <simple-id uuid='{6769EC1A-E078-4269-877C-664364191854}' />
+    </worksheet>
+    <worksheet name='Tenure vs Turnover Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_turnover_dashboard' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bb8dsn03x3nqs161sasy1y1gamu'>
+            <column caption='Turnover Risk Zone' datatype='string' name='[Calculation_978125612480557056]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [tenure] &lt;= 2 THEN &quot;New Joiners&quot;&#13;&#10;ELSEIF [tenure] &lt;= 5 THEN &quot;Critical Retention Period&quot;&#13;&#10;ELSE &quot;Stable Employees (6+)&quot;&#13;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_978125612480557056]' derivation='Attribute' name='[attr:Calculation_978125612480557056:nk]' pivot='key' type='nominal' />
+            <column-instance column='[left]' derivation='Avg' name='[avg:left:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal' />
+            <column-instance column='[tenure]' derivation='None' name='[none:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' value='69' />
+            <encoding attr='space' class='1' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline0' value='#88ee99' />
+            <format attr='fill-color' id='refline4' value='#ffa238' />
+            <format attr='fill-color' id='refline8' value='#878fff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <tooltip column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[attr:Calculation_978125612480557056:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' paired-id='refline1' scope='per-table' symmetric='false' value='1' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label='New Employee Phase' label-type='custom' paired-id='refline0' scope='per-table' symmetric='false' value='3' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='2' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline4' label-type='automatic' paired-id='refline5' scope='per-table' symmetric='false' value='3' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='4' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline5' label='High risk zone' label-type='custom' paired-id='refline4' scope='per-table' symmetric='false' value='6' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='5' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline8' label-type='automatic' paired-id='refline9' scope='per-table' symmetric='false' value='6' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='7' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline9' label='Loyal Employees Zone' label-type='custom' paired-id='refline8' scope='per-table' symmetric='false' value='11' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='8' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1534254550933838' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#5555ff' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <tooltip column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[attr:Calculation_978125612480557056:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7691160440444946' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#5555ff' />
+                <format attr='mark-markers-mode' value='auto' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <tooltip column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[attr:Calculation_978125612480557056:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1534254550933838' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#79706e' />
+                <format attr='mark-markers-mode' value='auto' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk] + [federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk])</rows>
+        <cols>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]</cols>
+      </table>
+      <simple-id uuid='{20955F0D-024C-4394-88B6-54C941598436}' />
+    </worksheet>
+    <worksheet name='Turnover by Department'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_turnover_dashboard' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bb8dsn03x3nqs161sasy1y1gamu'>
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[left]' derivation='Sum' name='[pcto:sum:left:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[pcto:sum:left:qk]' field-type='quantitative' max='0.32095165932457126' min='-0.00091315357081854292' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[pcto:sum:left:qk]' scope='rows' value='% of Total' />
+            <format attr='display' class='0' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[pcto:sum:left:qk]' scope='rows' value='false' />
+            <format attr='height' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk]' value='29' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk]' value='82' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[pcto:sum:left:qk]</rows>
+        <cols>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk]</cols>
+      </table>
+      <simple-id uuid='{E6F734AE-A246-49CE-B7E0-7DAD463B09AB}' />
+    </worksheet>
+    <worksheet name='Turnover by Salary Level'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='salifort_turnover_dashboard' name='federated.1bb8dsn03x3nqs161sasy1y1gamu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bb8dsn03x3nqs161sasy1y1gamu'>
+            <column-instance column='[left]' derivation='Avg' name='[avg:left:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal' />
+            <column-instance column='[salary]' derivation='None' name='[none:salary:nk]' pivot='key' type='nominal' />
+            <column caption='Salary' datatype='string' name='[salary]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:salary:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;low&quot;</bucket>
+              <bucket>&quot;medium&quot;</bucket>
+              <bucket>&quot;high&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:salary:nk]' value='99' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]</rows>
+        <cols>[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:salary:nk]</cols>
+      </table>
+      <simple-id uuid='{0EA2C08C-B2AA-477C-A154-DF5EDE733F94}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Salifort Motors Employee Turnover &amp; Prediction Dashboard'>
+      <style />
+      <size maxheight='860' maxwidth='1200' minheight='600' minwidth='1200' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='7' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97858' id='13' param='horz' type-v2='layout-flow' w='98666' x='667' y='1071'>
+            <zone h='97858' id='10' param='horz' type-v2='layout-flow' w='85333' x='667' y='1071'>
+              <zone h='97858' id='8' type-v2='layout-basic' w='85333' x='667' y='1071' />
+            </zone>
+            <zone fixed-size='160' h='97858' id='12' is-fixed='true' param='vert' type-v2='layout-flow' w='13333' x='86000' y='1071'>
+              <zone h='38019' id='14' name='Turnover by Department' pane-specification-id='0' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk]' type-v2='color' w='13333' x='86000' y='1071'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10843' id='16' name='Turnover by Salary Level' pane-specification-id='0' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' type-v2='color' w='13333' x='86000' y='39090'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='80321' id='3' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='6693' id='4' type-v2='text' w='80583' x='1167' y='402'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='16' underline='true'>Salifort Motors Employee Turnover &amp; Prediction Dashboard</run>
+          </formatted-text>
+        </zone>
+        <zone fixed-size='187' h='17805' id='5' is-fixed='true' name='KPI cards' show-title='false' w='77000' x='667' y='5622'>
+          <layout-cache fixed-size-h='187' type-h='fixed' type-w='fixed' />
+        </zone>
+        <zone h='53414' id='11' name='Turnover by Department' show-title='false' w='56500' x='250' y='26238'>
+          <layout-cache minheight='206' type-h='scalable' type-w='fixed' />
+        </zone>
+        <zone h='33333' id='15' name='Turnover by Salary Level' show-title='false' w='33333' x='66333' y='45515'>
+          <layout-cache minheight='206' type-h='scalable' type-w='fixed' />
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97858' id='17' param='vert' type-v2='layout-flow' w='98666' x='667' y='1071'>
+                <zone forceUpdate='true' h='6693' id='4' type-v2='text' w='80583' x='1167' y='402'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='16' underline='true'>Salifort Motors Employee Turnover &amp; Prediction Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='153' h='17805' id='5' is-fixed='true' name='KPI cards' show-title='false' w='77000' x='667' y='5622'>
+                  <layout-cache fixed-size-h='187' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53414' id='11' is-fixed='true' name='Turnover by Department' show-title='false' w='56500' x='250' y='26238'>
+                  <layout-cache minheight='206' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='38019' id='14' name='Turnover by Department' pane-specification-id='0' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk]' type-v2='color' w='13333' x='86000' y='1071'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33333' id='15' is-fixed='true' name='Turnover by Salary Level' show-title='false' w='33333' x='66333' y='45515'>
+                  <layout-cache minheight='206' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10843' id='16' name='Turnover by Salary Level' pane-specification-id='0' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' type-v2='color' w='13333' x='86000' y='39090'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{434EE5F8-00E3-4F78-9B5B-E164E47BAD65}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' name='KPI cards'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{00B9BA0B-6A5A-4BDE-8B16-1B7D689B9F46}' />
+    </window>
+    <window class='worksheet' name='Turnover by Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:department:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{945B4E49-0090-4BF3-A1D4-A8D21AD857DD}' />
+    </window>
+    <window class='worksheet' name='Turnover by Salary Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:left:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D975AF65-4A37-41B9-8E12-79CBC42DA8B8}' />
+    </window>
+    <window class='worksheet' name='Satisfaction vs Turnover'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:Calculation_336925615392382980:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{60E300C5-0C48-43EB-A9E8-F4345D8B69A1}' />
+    </window>
+    <window class='worksheet' name='Hours Worked vs Evaluation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:left:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D3618536-2EA8-4EFC-8D66-DBA2D3FA1A38}' />
+    </window>
+    <window class='worksheet' name='Tenure vs Turnover Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45257140-03E9-4D62-8588-597CF99949DD}' />
+    </window>
+    <window class='worksheet' name='Department vs Average Satisfaction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[avg:satisfaction_level:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B100D795-DE36-446B-A0BF-EB8FF03BDEF3}' />
+    </window>
+    <window class='worksheet' name='Feature Importance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1tyg5a41bmzmb10zmwubs0kpjpxg].[avg:importance:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{05F3A5F1-2712-4C55-8B44-62C8FE4F07A3}' />
+    </window>
+    <window class='worksheet' name='Model Performance Summary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{491AE760-D5A8-4AE7-B3E4-3DB0BD895079}' />
+    </window>
+    <window class='worksheet' name='High-Risk Employees'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:predicted_probability:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{39F88A6A-99A2-40C1-82FA-60020B9E1AC4}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Salifort Motors Employee Turnover &amp; Prediction Dashboard'>
+      <viewpoints>
+        <viewpoint name='KPI cards' />
+        <viewpoint name='Turnover by Department'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Turnover by Salary Level'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{1F323C83-82F7-4457-934F-DCA4B9431F2C}' />
+    </window>
+  </windows>
+</workbook>
