@@ -912,7 +912,6 @@
               <approx-count>10</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
-              <object-id>[salifort_feature_importance.csv_3CD9150765CD4DD19F6698BC399EBC0F]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>importance</remote-name>
@@ -926,7 +925,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>10</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[salifort_feature_importance.csv_3CD9150765CD4DD19F6698BC399EBC0F]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1582,10 +1580,10 @@
             <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
             <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' paired-id='refline1' scope='per-table' symmetric='false' value='1' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='1' />
             <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label='New Employee Phase' label-type='custom' paired-id='refline0' scope='per-table' symmetric='false' value='3' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='2' />
-            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline4' label-type='automatic' paired-id='refline5' scope='per-table' symmetric='false' value='3' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='4' />
-            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline5' label='High risk zone' label-type='custom' paired-id='refline4' scope='per-table' symmetric='false' value='6' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='5' />
-            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline8' label-type='automatic' paired-id='refline9' scope='per-table' symmetric='false' value='6' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='7' />
-            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline9' label='Loyal Employees Zone' label-type='custom' paired-id='refline8' scope='per-table' symmetric='false' value='11' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='8' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline4' label-type='automatic' paired-id='refline5' scope='per-table' symmetric='false' value='3' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='3' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline5' label='High risk zone' label-type='custom' paired-id='refline4' scope='per-table' symmetric='false' value='6' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='4' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline8' label-type='automatic' paired-id='refline9' scope='per-table' symmetric='false' value='6' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='5' />
+            <reference-line axis-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' enable-instant-analytics='true' formula='constant' id='refline9' label='Loyal Employees Zone' label-type='custom' paired-id='refline8' scope='per-table' symmetric='false' value='11' value-column='[federated.1bb8dsn03x3nqs161sasy1y1gamu].[none:tenure:qk]' z-order='6' />
             <style>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='user' />
@@ -1871,8 +1869,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='950' minheight='950' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97858' id='17' param='vert' type-v2='layout-flow' w='98666' x='667' y='1071'>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97858' id='19' param='vert' type-v2='layout-flow' w='98666' x='667' y='1071'>
                 <zone forceUpdate='true' h='6693' id='4' type-v2='text' w='80583' x='1167' y='402'>
                   <formatted-text>
                     <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='16' underline='true'>Salifort Motors Employee Turnover &amp; Prediction Dashboard</run>
